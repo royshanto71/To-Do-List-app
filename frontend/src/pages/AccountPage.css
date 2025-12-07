@@ -1,0 +1,121 @@
+.account-page {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.account-header {
+  margin-bottom: var(--space-xl);
+}
+
+.account-title {
+  font-size: var(--font-size-2xl);
+  font-weight: 700;
+  color: var(--text-primary);
+  margin-bottom: var(--space-xs);
+}
+
+.account-subtitle {
+  color: var(--text-secondary);
+}
+
+.account-grid {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-lg);
+}
+
+.account-section {
+  background: var(--bg-card);
+  border: 1px solid var(--glass-border);
+  border-radius: var(--radius-xl);
+  padding: var(--space-xl);
+}
+
+.section-header {
+  display: flex;
+  align-items: center;
+  gap: var(--space-sm);
+  margin-bottom: var(--space-lg);
+  padding-bottom: var(--space-md);
+  border-bottom: 1px solid var(--glass-border);
+  color: var(--text-secondary);
+}
+
+.section-header h2 {
+  font-size: var(--font-size-lg);
+  font-weight: 600;
+  color: var(--text-primary);
+}
+
+.account-form {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-lg);
+}
+
+.account-stats {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: var(--space-md);
+  margin-bottom: var(--space-lg);
+}
+
+.account-stat {
+  text-align: center;
+  padding: var(--space-lg);
+  background: rgba(255, 255, 255, 0.03);
+  border-radius: var(--radius-lg);
+}
+
+.stat-number {
+  display: block;
+  font-size: var(--font-size-2xl);
+  font-weight: 700;
+  color: var(--primary-400);
+  margin-bottom: var(--space-xs);
+}
+
+.stat-label {
+  font-size: var(--font-size-sm);
+  color: var(--text-secondary);
+}
+
+.member-since {
+  text-align: center;
+  color: var(--text-secondary);
+  font-size: var(--font-size-sm);
+}
+
+.member-since strong {
+  color: var(--text-primary);
+}
+
+/* Danger Zone */
+.danger-zone {
+  border-color: rgba(239, 68, 68, 0.3);
+}
+
+.danger-zone .section-header {
+  color: var(--error);
+  border-color: rgba(239, 68, 68, 0.2);
+}
+
+.danger-zone .section-header h2 {
+  color: var(--error);
+}
+
+.danger-text {
+  color: var(--text-secondary);
+  font-size: var(--font-size-sm);
+  margin-bottom: var(--space-lg);
+}
+
+@media (max-width: 640px) {
+  .account-stats {
+    grid-template-columns: 1fr;
+  }
+  
+  .account-section {
+    padding: var(--space-lg);
+  }
+}
